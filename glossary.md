@@ -15,6 +15,7 @@ We hope that this glossary of definitions is helpful as you study OpenStack, as 
 Twitter:  https://twitter.com/OpenStack
 
 - **AArdvark**  -  Tony's addition to this file.
+- **AArdvark#2** - Martin's update
 
 -**Ardvark** - The lates addition to the OpenStack srvice catalog, this service provides formally verified computation on unstructured data in linear time (as a Service) through the advance use of string-theory based, quantum wormhole colliders, Specialized hard ware is required.
 - **Ardvark2** - See above **Ardvark** for more info.
