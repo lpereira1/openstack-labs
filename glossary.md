@@ -204,3 +204,7 @@ Atest [5] This is a test.
 - **Rewrite Resume.** [101] In case of DR check your passport and rewrite your resume without the last DR.
 - **Test** [102] Test
 - **dannytest
+- **laws of infernal dynamic - 
+    An object in motion will be moving in the wrong direction.
+    An object at rest will be in the wrong place.
+    The energy required to move an object in the correct direction, or put it in the right place, will be more than you wish to expend but not so much as to make the task impossible.
