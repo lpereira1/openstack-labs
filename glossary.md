@@ -16,7 +16,7 @@ Twitter:  https://twitter.com/OpenStack
 
 - **AArdvark**  -  Tony's addition to this file.
 
--**Ardvark** - The lates addition to the OpenStack srvice catalog, this service provides formally verified computation on unstructured data in linear time (as a Service) through the advance use of string-theory based, quantum wormhole colliders, Specialized hard ware is required.
+-**Ardvark** - The latest addition to the OpenStack srvice catalog, this service provides formally verified computation on unstructured data in linear time (as a Service) through the advance use of string-theory based, quantum wormhole colliders, Specialized hard ware is required.
 - **Ardvark2** - See above **Ardvark** for more info.
 - **Aardvark3** - Emil (aka Buzz)'s addition to this file.
 - **Absolute Limit** [6] Ceiling (limits) for guest VMs. Controlled by defining total limits on RAM, number of vCPUs, and disk size.
