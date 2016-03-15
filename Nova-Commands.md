@@ -48,7 +48,7 @@ usage: `nova [optional arguments...] [subcommand]`
   - The **host r00001m001** is the compute node's ID that we want to evacuate, which you would have had to determine previously with a **nova host-list**
   - The **fields id** works with nova list and extracts values of specified fields. You can find valid field names in the Property column with: **nova show INSTANCE_ID** 
   - Then pipe this output to grep and filter on the string **instance-**
-  - Then pipe this output to cut which will use a **d**limiter = <space> and grab the second field
+  - Then pipe this output to cut which will use a **d**elimiter = <space> and grab the second field
   - Now the variable $inst = the instance's ID
   - Start that instance with nova start $inst
   - End the for loop (bash for: do it again)
@@ -273,7 +273,7 @@ usage: `nova [optional arguments...] [subcommand]`
 `net`                         DEPRECATED, Use tenant-network-show instead.  
 `net-create`                  DEPRECATED, use tenant-network-create instead.  
 `net-delete`                  DEPRECATED, use tenant-network-delete instead.  
-`net-list`                   DEPRECATED, use tenant-network-list instead.  
+`net-list`                    DEPRECATED, use tenant-network-list instead.  
 `tenant-network-create`       Create a tenant network.  
 `tenant-network-delete`       Delete a tenant network.  
 `tenant-network-list`         List tenant networks.  
