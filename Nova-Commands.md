@@ -41,16 +41,16 @@ usage: `nova [optional arguments...] [subcommand]`
 
   `for inst in $(nova list --all-tenants --host r000001m001 --fields id,instance_name | grep "instance-" | cut -d ' ' -f 2); do nova start $inst; done`
 
-    - This for loop loads variable $inst with instance ID
-    - **nova list:** will list all vms which could be a really big list unless it is pared down.
-    - The **--all-tenants** includes all tenants, not just the admin tenant
-    - The **host r00001m001** is the compute node's ID that we want to evacuate, which you would have had to determine previously with a *nova host-list**
-    - The **fields id** works with nova list and extracts vaules of specified fields. You can find valid field names in the Property column with: **nova show <INSTANCE ID>** 
-    - Then pipe this output to grep and filter on the string **instance-**
-    - Then pipe this output to cut which will use a **d**limiter = <space> and grab the second field
-    - Now the variable $inst = the instance's ID
-    - Start that instance with nova start $inst
-    - End the for loop (bash for: do it again)
+  - This for loop loads variable $inst with instance ID
+  - **nova list:** will list all vms which could be a really big list unless it is pared down.
+  - The **--all-tenants** includes all tenants, not just the admin tenant
+  - The **host r00001m001** is the compute node's ID that we want to evacuate, which you would have had to determine previously with a *nova host-list**
+  - The **fields id** works with nova list and extracts vaules of specified fields. You can find valid field names in the Property column with: **nova show <INSTANCE ID>** 
+  - Then pipe this output to grep and filter on the string **instance-**
+  - Then pipe this output to cut which will use a **d**limiter = <space> and grab the second field
+  - Now the variable $inst = the instance's ID
+  - Start that instance with nova start $inst
+  - End the for loop (bash for: do it again)
 
 
  
