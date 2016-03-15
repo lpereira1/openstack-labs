@@ -33,7 +33,8 @@ usage: `nova [optional arguments...] [subcommand]`
   - **nova start** ***NAME***
   - **nova reboot** ***NAME***
   - **nova boot --user-data <FILE>** Injects file into booting instance's /var/lib/cloud directory
-  - **nova secgroup-add-group-rule default default icmp -1 -1** Add ping support
+  - **nova secgroup-list**
+  - **nova secgroup-add-group-rule default default icmp -1 -1** Add ping support (ICMP type and code, negative means unlimited)
   - **nova secgroup-add-group-rule default default tcp 22 22** Add SSH to security group
 
 
