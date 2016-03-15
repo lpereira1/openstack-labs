@@ -25,7 +25,7 @@ usage: `nova [optional arguments...] [subcommand]`
   - **nova meta volumeTwoImage set newmeta='my meta data'**
   - **nova image-create volumeTwoImage snapshotOfVolumeImage**
   - **nova image-show snapshotOfVolumeImage**
-  - **nova pause NAME**
+  - **nova pause *NAME***
   - **nova unpause NAME**
   - **nova suspend NAME**
   - **nova resume NAME**
