@@ -31,6 +31,7 @@ usage: `nova [optional arguments...] [subcommand]`
   - **nova resume** ***NAME***
   - **nova stop** ***NAME***
   - **nova start** ***NAME***
+  - **nova delete** ***INSTANCE-ID***
   - **nova reboot** ***NAME***
   - **nova boot --user-data <FILE>** Injects file into booting instance's /var/lib/cloud directory
   - **nova secgroup-list**
