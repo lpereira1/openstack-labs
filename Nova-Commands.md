@@ -21,7 +21,7 @@ usage: `nova [optional arguments...] [subcommand]`
   - **nova boot --image cirros-0.3.1-x86_64-uec --flavor m1.tiny MyUniqueInstanceName**  Boot an instance using an unique image name.
   - **nova show <NAME>**  Get the details
   - **nova show <INSTANCE ID>** Same as above but with ID instead of name
-  - **nova console-log <INSTANCE ID>*8 View the log 
+  - **nova console-log <INSTANCE ID>** View the log 
   - **nova meta volumeTwoImage set newmeta='my meta data'**
   - **nova image-create volumeTwoImage snapshotOfVolumeImage**
   - **nova image-show snapshotOfVolumeImage**
