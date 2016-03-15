@@ -12,7 +12,7 @@ usage: `nova [optional arguments...] [subcommand]`
 
 
 
-###Most popular nova commands
+### Most popular nova commands
 
   - **nova list**  List inatnaces, check status of instance
   - **nova image-list** List images
@@ -38,7 +38,8 @@ usage: `nova [optional arguments...] [subcommand]`
 
 
 ### Start all VMs on a given compute node
-    `for inst in $(nova list --all-tenants --host r000001m001 --fields id,instance_name | grep "instance-" | cut -d ' ' -f 2); do nova start $inst; done`
+
+  `for inst in $(nova list --all-tenants --host r000001m001 --fields id,instance_name | grep "instance-" | cut -d ' ' -f 2); do nova start $inst; done`
 
     - This for loop loads variable $inst with instance ID
     - **nova list:** will list all vms which could be a really big list unless it is pared down.
