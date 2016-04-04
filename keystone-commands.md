@@ -43,7 +43,7 @@ Run all the commands (as admin) indicated with **"<--"**
 `tenant-create`  
 `tenant-delete`  
 `tenant-get`  
-`tenant-list`  <--  keystone tenant-list
+`tenant-list`  <--  keystone tenant-list  
 `tenant-update`  
 
 #### Get a token
