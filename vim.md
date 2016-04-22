@@ -45,8 +45,6 @@ When in INSERT mode, hit the Esc key; to enter COMMAND mode. Then you can type
 
 **:wq** to write and quit (think write and quit)  
 
-**:wq!** to write and quit even if file has only read permission (if file does not have write permission: force write)  
-
 **:x** to write and quit (shorter than :wq)  
 
 **:qa** to quit all (short for :quitall)  
