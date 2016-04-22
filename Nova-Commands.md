@@ -10,6 +10,51 @@ usage: `nova [optional arguments...] [subcommand]`
 
 **[optional arguments]** are shown at the bottom of this web page  
 
+
+
+### Most popular nova commands
+
+  - **nova list**  List instances, check status of instance
+  - **nova image-list** List images
+  - **nova flavor-list** List flavors
+  - **nova boot --image IMAGE --flavor FLAVOR INSTANCE_NAME**  Boot an instance using flavor and image names (if names are unique)
+  - **nova boot --image cirros-0.3.1-x86_64-uec --flavor m1.tiny MyUniqueInstanceName**  Boot an instance using an unique image name.
+  - **nova show** ***NAME*** Get the details
+  - **nova show INSTANCE-ID** Same as above but with ID instead of name
+  - **nova console-log INSTANCE-ID** View the log 
+  - **nova meta volumeTwoImage set newmeta='my meta data'**
+  - **nova image-create volumeTwoImage snapshotOfVolumeImage**
+  - **nova image-show snapshotOfVolumeImage**
+  - **nova pause** ***NAME***
+  - **nova unpause** ***NAME***
+  - **nova suspend** ***NAME***
+  - **nova resume** ***NAME***
+  - **nova stop** ***NAME***
+  - **nova start** ***NAME***
+  - **nova delete** ***INSTANCE-ID***
+  - **nova reboot** ***NAME***
+  - **nova boot --user-data <FILE>** Injects file into booting instance's /var/lib/cloud directory
+  - **nova secgroup-list**
+  - **nova secgroup-add-group-rule default default icmp -1 -1** Add ping support (ICMP type and code, negative means unlimited)
+  - **nova secgroup-add-group-rule default default tcp 22 22** Add SSH to security group
+
+
+### Start all VMs on a given compute node
+
+  `for inst in $(nova list --all-tenants --host r000001m001 --fields id,instance_name | grep "instance-" | cut -d ' ' -f 2); do nova start $inst; done`
+
+  - This for loop loads variable $inst with instance ID
+  - **nova list:** will list all vms which could be a really big list unless it is pared down.
+  - The **--all-tenants** includes all tenants, not just the admin tenant
+  - The **host r00001m001** is the compute node's ID that we want to evacuate, which you would have had to determine previously with a **nova host-list**
+  - The **fields id** works with nova list and extracts values of specified fields. You can find valid field names in the Property column with: **nova show INSTANCE_ID** 
+  - Then pipe this output to grep and filter on the string **instance-**
+  - Then pipe this output to cut which will use a **d**elimiter = <space> and grab the second field
+  - Now the variable $inst = the instance's ID
+  - Start that instance with nova start $inst
+  - End the for loop (bash for: do it again)
+
+
  
 #### subcommand
   
@@ -229,7 +274,7 @@ usage: `nova [optional arguments...] [subcommand]`
 `net`                         DEPRECATED, Use tenant-network-show instead.  
 `net-create`                  DEPRECATED, use tenant-network-create instead.  
 `net-delete`                  DEPRECATED, use tenant-network-delete instead.  
-`net-list`                   DEPRECATED, use tenant-network-list instead.  
+`net-list`                    DEPRECATED, use tenant-network-list instead.  
 `tenant-network-create`       Create a tenant network.  
 `tenant-network-delete`       Delete a tenant network.  
 `tenant-network-list`         List tenant networks.  
