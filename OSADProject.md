@@ -14,7 +14,7 @@ title = "OSAD"
 
 `service chrony restart`
 
-Place jumper in network 172.29.236.0/22  Range 172.29.236.1 - 172.29.239.254
+Place jumper in network 172.29.236.0/22   Range 172.29.236.1 - 172.29.239.254
 
 `git clone -b TAG https://github.com/openstack/openstack-ansible.git /opt/openstack-ansible`
 
