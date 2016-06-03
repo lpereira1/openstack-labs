@@ -1,5 +1,5 @@
 ---
-date: "2016-2-09"
+date: "2016-02-09"
 draft: false
 weight: 20
 title: "Using GNU Screen to Scroll Back"
