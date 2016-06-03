@@ -1,9 +1,9 @@
-+++
-date = "2015-09-30"
-draft = false
-weight = 100
-title = "README"
-+++
+---
+date: "2015-09-30"
+draft: false
+weight: 100
+title: "README"
+---
 
 # Alta3 openstack-labs
 

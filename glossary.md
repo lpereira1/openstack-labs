@@ -1,9 +1,9 @@
-+++
-date = "2015-09-30"
-draft = false
-weight = 16
-title = "Glossary"
-+++
+---
+date: "2015-09-30"
+draft: false
+weight: 16
+title: "Glossary"
+---
 
 We need to add the term ASIC to the vocabulary
 

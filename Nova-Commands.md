@@ -1,10 +1,9 @@
-+++
-date = "2015-10-30"
-draft = false
-weight = 22
-title = "Nova Commands"
-+++
-
+---
+date: "2015-10-30"
+draft: false
+weight: 22
+title: "Nova Commands"
+---
 
 usage: `nova [optional arguments...] [subcommand]`  
 

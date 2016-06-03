@@ -1,9 +1,9 @@
-+++
-date = "2016-04-22"
-draft = false
-weight = 1001
-title = "OSAD"
-+++
+---
+date: "2016-04-22"
+draft: false
+weight: 1001
+title: "OSAD"
+---
 
 
 ### Configure jumper

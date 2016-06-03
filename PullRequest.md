@@ -1,9 +1,9 @@
-+++
-date = "2016-03-14"
-draft = false
-weight = 213 
-title = "Lab - Git Pull Request"
-+++
+---
+date: "2016-03-14"
+draft: false
+weight: 213 
+title: "Lab - Git Pull Request"
+---
 
 ### Lab Duration: 20 minutes
 

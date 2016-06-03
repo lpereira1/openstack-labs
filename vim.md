@@ -1,9 +1,9 @@
-+++
-date = "2016-04-08"
-draft = false
-weight = 99
-title = "VIM Cheat Sheet"
-+++
+---
+date: "2016-04-08"
+draft: false
+weight: 99
+title: "VIM Cheat Sheet"
+---
 
 How to edit a file using vim
 

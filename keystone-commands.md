@@ -1,9 +1,9 @@
-+++
-date = "2015-10-30"
-draft = false
-weight = 21
-title = "Keystone Commands"
-+++
+---
+date: "2015-10-30"
+draft: false
+weight: 21
+title: "Keystone Commands"
+---
 
 **usage:** keystone [optional arguments...] [subcommand]
 
