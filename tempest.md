@@ -5,6 +5,7 @@ weight: 17
 title: "Lab 17 - Edit the tempest.conf file"
 ---
 
+<pre>
 [DEFAULT]
 
 #
@@ -1157,4 +1158,4 @@ title: "Lab 17 - Edit the tempest.conf file"
 
 # Extract correct host info from host@backend (boolean value)
 #volume_services = false
-
+</pre>
