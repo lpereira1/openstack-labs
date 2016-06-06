@@ -2,7 +2,7 @@
 date: "2015-10-06"
 draft: false
 weight: 17
-title: "Lab 16 - Build your own OpenStack environment at home"
+title: "Lab 17 - Edit the tempest.conf file"
 ---
 <pre>
 [DEFAULT]
