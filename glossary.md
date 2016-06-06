@@ -1,7 +1,7 @@
 ---
 date: "2015-09-30"
 draft: false
-weight: 16
+weight: 300
 title: "Glossary"
 ---
 
