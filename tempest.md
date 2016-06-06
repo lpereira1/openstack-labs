@@ -1,7 +1,7 @@
 ---
 date: "2015-10-06"
 draft: false
-weight: 16
+weight: 17
 title: "Lab 16 - Build your own OpenStack environment at home"
 ---
 <pre>
