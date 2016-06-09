@@ -117,4 +117,14 @@ Now run the sl.yml playbook and it should go a lot faster.
 
   > Now that you are synced with github, this should work
 
+### Add Interface example
 
+    `source keystonerc_chestercopperpot`
+  
+    `neutron net-list`
+ 
+    `nova   interface-attach    --net-id  a0a1ac28-e581-4937-9667-632bc6a1470a`
+
+    `neutron   port-create    --security-group http-ssh        a0a1ac28-e581-4937-9667-632bc6a1470a`
+  
+    `nova interface-attach    --port-id 6c65150b-4b8a-4e3d-84eb-bebce64b228a    vt2`
