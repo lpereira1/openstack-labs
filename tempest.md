@@ -10,24 +10,25 @@ title: "Lab 17 - Edit the tempest.conf file"
 
 1. Get started
 
-   `mkdir tempest`  
-   `cd tempest`
+  `mkdir tempest`  
 
-   `git clone https://github.com/openstack/tempest.git`  
+  `cd tempest`
 
-   `git checkout stable/branch_you_need`  
+  `git clone https://github.com/openstack/tempest.git`  
+
+  `git checkout stable/branch_you_need`  
 
 2. Test dependency errors with the following nose test
 
-   `nosetests -v tempest`  
+  `nosetests -v tempest`  
 
 3. Create virtualenv and install all dependencies
 
-   `./run_tempest.sh`
+  `./run_tempest.sh`
 
 4.  Activate virtualenv
 
-   `ls -a`
+  `ls -a`
 
   ` source .venv/bin/activate`
 
