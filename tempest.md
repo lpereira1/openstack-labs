@@ -62,12 +62,7 @@ title: "Lab 17 - Edit the tempest.conf file"
 
   `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
 
-10.
-File "/home/saju/tempest_test/tempest/tempest/services/identity/json/identity_client.py", line 226, in __init__
-    if 'tokens' not in auth_url:
-TypeError: argument of type 'NoneType' is not iterable
-
-11. Fix the missing file error
+10. Fix the missing file error
 
   `sudo vim /etc/tempest/tempest.conf`
 
@@ -84,7 +79,7 @@ TypeError: argument of type 'NoneType' is not iterable
   admin_password=alta3
 </pre>
 
-12. Run only the tests inside the module test_users.py
+11. Run only the tests inside the module test_users.py
   `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
 OR
   `nosetests -vx tempest.api.identity.admin.v3.test_users`
