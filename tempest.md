@@ -36,11 +36,11 @@ title: "Lab 17 - Edit the tempest.conf file"
 
      `nosetests -v tempest --help`
 
-6. Run a test taht stops on the first error or failure.
+6. Run a test that stops on the first error or failure.
 
-    `nosetests -vx tempest`
+    `nosetests -vx tempest`  
 
-  or
+    or run until finished
 
     `nosetests -v tempest --stop`
 
