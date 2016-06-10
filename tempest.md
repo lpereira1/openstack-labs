@@ -9,9 +9,13 @@ title: "Lab 17 - Edit the tempest.conf file"
 
 
 1. Get started
+
   `mkdir tempest`  
+
   `cd tempest`
+
   `git clone https://github.com/openstack/tempest.git`  
+
   `git checkout stable/branch_you_need`  
 
 2. Test dependency errors with the following nose test
@@ -23,13 +27,14 @@ title: "Lab 17 - Edit the tempest.conf file"
   `./run_tempest.sh`
 
 4.  Activate virtualenv
+
   `ls -a`
 
   `source .venv/bin/activate`
 
 5. Check out thehelp information
 
-  `nosetests -v tempest --help`
+   `nosetests -v tempest --help`
 
 6. Run a test taht stops on the first error or failure.
 
