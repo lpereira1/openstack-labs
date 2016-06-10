@@ -20,51 +20,51 @@ title: "Lab 17 - Edit the tempest.conf file"
 
 2. Test dependency errors with the following nose test
 
-  `nosetests -v tempest`  
+    `nosetests -v tempest`  
 
 3. Create virtualenv and install all dependencies
 
-  `./run_tempest.sh`
+    `./run_tempest.sh`
 
 4.  Activate virtualenv
 
-  `ls -a`
+    `ls -a`
 
-  ` source .venv/bin/activate`
+    ` source .venv/bin/activate`
 
 5. Check out thehelp information
 
-   `nosetests -v tempest --help`
+     `nosetests -v tempest --help`
 
 6. Run a test taht stops on the first error or failure.
 
-  `nosetests -vx tempest`
+    `nosetests -vx tempest`
 
   or
 
-  `nosetests -v tempest --stop`
+    `nosetests -v tempest --stop`
 
 7. ConfigFilesNotFoundError: Failed to read some config files: /etc/tempest/tempest.conf
 
-  `cd tempest_test/tempest/etc`
+    `cd tempest_test/tempest/etc`
 
-  `vim tempest.conf.sample`
+    `vim tempest.conf.sample`
 
     > Read "tempest.conf.sample" file and understand different config options
 
 8. Copy tempest.conf.sample to /etc/tempest/tempest.conf
 
-   `sudo mkdir /etc/tempest`
+     `sudo mkdir /etc/tempest`
   
-   `sudo  cp tempest.conf.sample   /etc/tempest/tempest.conf`
+     `sudo  cp tempest.conf.sample   /etc/tempest/tempest.conf`
 
 9. Run only the tests inside the module test_users.py
 
-   `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
+     `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
 
 10. Fix the missing file error
 
-   `sudo vim /etc/tempest/tempest.conf`
+     `sudo vim /etc/tempest/tempest.conf`
 
 <pre>
   [identity]
@@ -80,13 +80,13 @@ title: "Lab 17 - Edit the tempest.conf file"
 </pre>
 
 11. Run only the tests inside the module test_users.py
-   `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
+     `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
 OR
-   `nosetests -vx tempest.api.identity.admin.v3.test_users`
+     `nosetests -vx tempest.api.identity.admin.v3.test_users`
 OR
-   `nosetests -vx tempest.api.identity.admin.v3.test_users.py:UsersV3TestJSON.test_list_user_projects`
+     `nosetests -vx tempest.api.identity.admin.v3.test_users.py:UsersV3TestJSON.test_list_user_projects`
 OR
-   `nosetests -vx tempest.api.identity.admin.v3.test_users:UsersV3TestJSON.test_list_user_projects`
+     `nosetests -vx tempest.api.identity.admin.v3.test_users:UsersV3TestJSON.test_list_user_projects`
 
 ======
 Note:
