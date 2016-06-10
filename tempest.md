@@ -1,9 +1,101 @@
 ---
-date: "2015-10-06"
+date: "2016-06-10"
 draft: false
 weight: 17
 title: "Lab 17 - Edit the tempest.conf file"
 ---
+
+## How to Test OpenStack Keystone or Identity Deployment With Tempest
+
+
+1. Get started
+  `mkdir tempest`  
+  `cd tempest`
+  `git clone https://github.com/openstack/tempest.git`  
+  `git checkout stable/branch_you_need`  
+
+2. Test dependency errors with the following nose test
+
+  `nosetests -v tempest`  
+
+3. Create virtualenv and install all dependencies
+
+  `./run_tempest.sh`
+
+4.  Activate virtualenv
+  `ls -a`
+
+  `source .venv/bin/activate`
+
+5. Check out thehelp information
+
+  `nosetests -v tempest --help`
+
+6. Run a test taht stops on the first error or failure.
+
+  `nosetests -vx tempest`
+
+  or
+
+  `nosetests -v tempest --stop`
+
+7. ConfigFilesNotFoundError: Failed to read some config files: /etc/tempest/tempest.conf
+
+  `cd tempest_test/tempest/etc`
+
+  `vim tempest.conf.sample`
+
+    > Read "tempest.conf.sample" file and understand different config options
+
+8. Copy tempest.conf.sample to /etc/tempest/tempest.conf
+
+  `sudo mkdir /etc/tempest`
+  
+  `sudo  cp tempest.conf.sample   /etc/tempest/tempest.conf`
+
+9. Run only the tests inside the module test_users.py
+
+  `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
+
+10.
+File "/home/saju/tempest_test/tempest/tempest/services/identity/json/identity_client.py", line 226, in __init__
+    if 'tokens' not in auth_url:
+TypeError: argument of type 'NoneType' is not iterable
+
+11. Fix the missing file error
+
+  `sudo vim /etc/tempest/tempest.conf`
+
+<pre>
+  [identity]
+  uri=http://192.168.0.10:5000/v2.0/  
+  uri_v3=http://192.168.0.10:5000/v3/  
+  uri=http://127.0.0.1:5000/v2.0/
+  uri_v3=http://127.0.0.1:5000/v3/
+  
+  [auth]
+  admin_username=admin
+  admin_tenant_name=admin 
+  admin_password=alta3
+</pre>
+
+12. Run only the tests inside the module test_users.py
+  `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
+OR
+  `nosetests -vx tempest.api.identity.admin.v3.test_users`
+OR
+  `nosetests -vx tempest.api.identity.admin.v3.test_users.py:UsersV3TestJSON.test_list_user_projects`
+OR
+  `nosetests -vx tempest.api.identity.admin.v3.test_users:UsersV3TestJSON.test_list_user_projects`
+
+======
+Note:
+-vxl 
+x ---> Stop running tests after the first error or failure
+l ---> Run test in Debug mode: So we can see better error message
+
+
+
 
 <pre>
 [DEFAULT]
