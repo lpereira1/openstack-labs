@@ -10,27 +10,26 @@ title: "Lab 17 - Edit the tempest.conf file"
 
 1. Get started
 
-  `mkdir tempest`  
+   `mkdir tempest`  
+   `cd tempest`
 
-  `cd tempest`
+   `git clone https://github.com/openstack/tempest.git`  
 
-  `git clone https://github.com/openstack/tempest.git`  
-
-  `git checkout stable/branch_you_need`  
+   `git checkout stable/branch_you_need`  
 
 2. Test dependency errors with the following nose test
 
-  `nosetests -v tempest`  
+   `nosetests -v tempest`  
 
 3. Create virtualenv and install all dependencies
 
-  `./run_tempest.sh`
+   `./run_tempest.sh`
 
 4.  Activate virtualenv
 
-  `ls -a`
+   `ls -a`
 
-  `source .venv/bin/activate`
+  ` source .venv/bin/activate`
 
 5. Check out thehelp information
 
@@ -54,17 +53,17 @@ title: "Lab 17 - Edit the tempest.conf file"
 
 8. Copy tempest.conf.sample to /etc/tempest/tempest.conf
 
-  `sudo mkdir /etc/tempest`
+   `sudo mkdir /etc/tempest`
   
-  `sudo  cp tempest.conf.sample   /etc/tempest/tempest.conf`
+   `sudo  cp tempest.conf.sample   /etc/tempest/tempest.conf`
 
 9. Run only the tests inside the module test_users.py
 
-  `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
+   `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
 
 10. Fix the missing file error
 
-  `sudo vim /etc/tempest/tempest.conf`
+   `sudo vim /etc/tempest/tempest.conf`
 
 <pre>
   [identity]
@@ -80,13 +79,13 @@ title: "Lab 17 - Edit the tempest.conf file"
 </pre>
 
 11. Run only the tests inside the module test_users.py
-  `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
+   `nosetests -vx tempest.api.identity.admin.v3.test_users.py`
 OR
-  `nosetests -vx tempest.api.identity.admin.v3.test_users`
+   `nosetests -vx tempest.api.identity.admin.v3.test_users`
 OR
-  `nosetests -vx tempest.api.identity.admin.v3.test_users.py:UsersV3TestJSON.test_list_user_projects`
+   `nosetests -vx tempest.api.identity.admin.v3.test_users.py:UsersV3TestJSON.test_list_user_projects`
 OR
-  `nosetests -vx tempest.api.identity.admin.v3.test_users:UsersV3TestJSON.test_list_user_projects`
+   `nosetests -vx tempest.api.identity.admin.v3.test_users:UsersV3TestJSON.test_list_user_projects`
 
 ======
 Note:
