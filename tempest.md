@@ -10,13 +10,13 @@ title: "Lab 17 - Edit the tempest.conf file"
 
 1. Get started
 
-  `mkdir tempest`  
+    `mkdir tempest`  
 
-  `cd tempest`
+    `cd tempest`
 
-  `git clone https://github.com/openstack/tempest.git`  
+    `git clone https://github.com/openstack/tempest.git`  
 
-  `git checkout stable/branch_you_need`  
+    `git checkout stable/branch_you_need`  
 
 2. Test dependency errors with the following nose test
 
