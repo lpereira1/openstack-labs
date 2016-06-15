@@ -5,21 +5,6 @@ weight: 300
 title: "Glossary"
 ---
 
-We need to add the term ASIC to the vocabulary
-
-Can Terry be included.....
-
-We hope that this glossary of definitions is helpful as you study OpenStack, as well as the other topics found in this manual. :) Our glossary began with a fork from the OpenStack documentation. Many helpful OpenStack definitions (and documentation) are available through docs.openstack.org, or by forking the openstack/openstack-manuals repository via:
-
-[OpenStack Manuals](https://github.com/openstack/openstack-manuals)
-Twitter:  https://twitter.com/OpenStack
-
-- **AArdvark**  -  Tony's addition to this file.
-- **AArdvark#2** - Martin's update
-
--**Ardvark** - The latest addition to the OpenStack srvice catalog, this service provides formally verified computation on unstructured data in linear time (as a Service) through the advance use of string-theory based, quantum wormhole colliders, Specialized hard ware is required.
-- **Ardvark2** - See above **Ardvark** for more info.
-- **Aardvark3** - Emil (aka Buzz)'s addition to this file.
 - **Absolute Limit** [6] Ceiling (limits) for guest VMs. Controlled by defining total limits on RAM, number of vCPUs, and disk size.
 - **Active Passive Configuration** [19] In a high-availability setup with an active/passive configuration, systems are set up to bring additional resources online to replace those that have failed.
 - **Address Pool** [7] A list of the fixed and/or floating IP addresses that are allocated/assigned to a project (tenant) to be used or assigned to the VM instances in a project.
