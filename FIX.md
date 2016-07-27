@@ -166,11 +166,11 @@ export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/
 export OS_REGION_NAME=RegionOne
 export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[36m\] bob >\[\e[m\] "
 
-vim keystonerc_chestcopperpot
-CREATE CHESTER SOURCE FILE
-export OS_USERNAME=chestercopperpot
-export OS_TENANT_NAME=vault_tek
-export OS_PASSWORD=fa5tpa55w0rd
-export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/
-export OS_REGION_NAME=RegionOne
-export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[32m\] chester >\[\e[m\] "
+vim keystonerc_chestcopperpot  
+CREATE CHESTER SOURCE FILE  
+export OS_USERNAME=chestercopperpot  
+export OS_TENANT_NAME=vault_tek  
+export OS_PASSWORD=fa5tpa55w0rd  
+export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/  
+export OS_REGION_NAME=RegionOne  
+export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[32m\] chester >\[\e[m\] "  
