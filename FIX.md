@@ -148,23 +148,23 @@ keystone user-create --name chestercopperpot --tenant vault_tek --pass fa5tpa55w
 
 (openstack) user create gandalf --project the_shire --password noneshallpass --email gandalf@theshire.example
 
-vim keystonerc_aliceanderson
-CREATE ALICE FILE
-export OS_USERNAME=aliceanderson
-export OS_TENANT_NAME=acme_inc
-export OS_PASSWORD=fa5tpa55w0rd
-export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/   
-export OS_REGION_NAME=RegionOne
-export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[35m\] alice >\[\e[m\] "
+vim keystonerc_aliceanderson  
+CREATE ALICE FILE  
+export OS_USERNAME=aliceanderson  
+export OS_TENANT_NAME=acme_inc  
+export OS_PASSWORD=fa5tpa55w0rd  
+export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/  
+export OS_REGION_NAME=RegionOne  
+export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[35m\] alice >\[\e[m\] "  
 
 vim keystonerc_bobbarker
-CREATE BOB SOURCE FILE
-export OS_USERNAME=bobbarker                       
-export OS_TENANT_NAME=acme_inc   
-export OS_PASSWORD=fa5tpa55w0rd          
+CREATE BOB SOURCE FILE  
+export OS_USERNAME=bobbarker  
+export OS_TENANT_NAME=acme_inc  
+export OS_PASSWORD=fa5tpa55w0rd  
 export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/  
-export OS_REGION_NAME=RegionOne
-export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[36m\] bob >\[\e[m\] "
+export OS_REGION_NAME=RegionOne  
+export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[36m\] bob >\[\e[m\] "  
 
 vim keystonerc_chestcopperpot  
 CREATE CHESTER SOURCE FILE  
