@@ -128,3 +128,49 @@ Now run the sl.yml playbook and it should go a lot faster.
   `neutron   port-create    --security-group http-ssh        a0a1ac28-e581-4937-9667-632bc6a1470a`
   
   `nova interface-attach    --port-id 6c65150b-4b8a-4e3d-84eb-bebce64b228a    vt2`
+  
+
+## Quick catch-up to end of lab 4:
+  
+source keystonerc_admin
+
+keystone tenant-create --name acme_inc
+
+keystone tenant-create --name vault_tek
+
+keystone user-create --name aliceanderson --tenant acme_inc --pass fa5tpa55w0rd --email alice@acme_inc.example
+
+keystone user-create --name bobbarker --tenant acme_inc --pass fa5tpa55w0rd --email bob@acme_inc.example
+
+keystone user-create --name chestercopperpot --tenant vault_tek --pass fa5tpa55w0rd --email chester@vault_tek.example
+
+(openstack) project create the_shire
+
+(openstack) user create gandalf --project the_shire --password noneshallpass --email gandalf@theshire.example
+
+vim keystonerc_aliceanderson
+CREATE ALICE FILE
+export OS_USERNAME=aliceanderson
+export OS_TENANT_NAME=acme_inc
+export OS_PASSWORD=fa5tpa55w0rd
+export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/   
+export OS_REGION_NAME=RegionOne
+export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[35m\] alice >\[\e[m\] "
+
+vim keystonerc_bobbarker
+CREATE BOB SOURCE FILE
+export OS_USERNAME=bobbarker                       
+export OS_TENANT_NAME=acme_inc   
+export OS_PASSWORD=fa5tpa55w0rd          
+export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/  
+export OS_REGION_NAME=RegionOne
+export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[36m\] bob >\[\e[m\] "
+
+vim keystonerc_chestcopperpot
+CREATE CHESTER SOURCE FILE
+export OS_USERNAME=chestercopperpot
+export OS_TENANT_NAME=vault_tek
+export OS_PASSWORD=fa5tpa55w0rd
+export OS_AUTH_URL=http://192.168.0.10:5000/v2.0/
+export OS_REGION_NAME=RegionOne
+export PS1="\[\e[34m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[32m\] chester >\[\e[m\] "
