@@ -4,9 +4,9 @@ draft: false
 weight: 300
 title: "Glossary"
 ---
-API Token  [0]  Passed on API requests and used by OpenStack services to verify that this particular user is authorized to access and run the requested operation.
-Austin  [0] The first release of OpenStack was called Austin. Unsurprisingly, the first design summit took place in this capital city of Texas. OpenStack versions are short lived, and the release dates are aggressive (about 2 new releases a year). Generally, a customer will fork an OpenStack release version, and stick with it.
-Compute  [0]  The term compute is synonymous with Nova. An OpenStack core project that provides compute services (manages VM instances).
+> API Token  [0]  Passed on API requests and used by OpenStack services to verify that this particular user is authorized to access and run the requested operation.
+> Austin  [0] The first release of OpenStack was called Austin. Unsurprisingly, the first design summit took place in this capital city of Texas. OpenStack versions are short lived, and the release dates are aggressive (about 2 new releases a year). Generally, a customer will fork an OpenStack release version, and stick with it.
+> Compute  [0]  The term compute is synonymous with Nova. An OpenStack core project that provides compute services (manages VM instances).
 Compute Controller  [0]  Chooses which hosts to start a VM instance.
 Compute Host  [0]  A set of physical hardware that is dedicated to running compute nodes.
 Daemon  [0] Processes that run in the background and wait for requests. Commonly examples include glance-api, keystone-server, neutron-server, nova-api, nova-scheduler, and so on.
