@@ -11,22 +11,22 @@ title: "Glossary"
 * Compute Host  [0]  A set of physical hardware that is dedicated to running compute nodes.
 * Daemon  [0] Processes that run in the background and wait for requests. Commonly examples include glance-api, keystone-server, neutron-server, nova-api, nova-scheduler, and so on.
 * ceph mds  [0] (ceph-mds) The metadata server daemon for the Ceph distributed file system. One or more instances of ceph-mds collectively manage the file system namespace, coordinating access to the shared OSD cluster. Each ceph-mds daemon instance should have a unique name. The name is used to identify daemon instances in the ceph.conf.
-Flat Mode Injection  [9]  A compute networking method where the OS network configuration information is injected into the image before the VM instance is started.
-FlatDHCP Manager  [9] The compute component that gives dnsmasq (DHCP, DNS, BOOTP, TFTP) and routing services.
-Gateway  [0] An IP addressed assigned to an interface, typically on a router, that can pass network traffic from one network to another.
-Instance Tunnels Network  [0]  A network used for instance traffic tunnels between compute nodes and the network node.
-Linux Bridge  [0]  Software that allows multiple VM instances to share a single Physical NIC within Compute.
-Multi-host  [0]  High-availability mode for legacy (nova) networking. Each compute node handles NAT and DHCP and acts as a gateway for all of the VMs on it. A networking failure on one compute node doesn't affect VMs on other compute nodes.
-Network Manager  [0] The Compute component that manages various network components, such as firewall rules, IP address allocation, and so on.
-Network Node  [0]  Any compute node that runs the network worker daemon.
-Networking  [0]  A core OpenStack project that provides a network connectivity abstraction layer to OpenStack Compute. The project name of Networking is neutron.
-Virtual Networking  [0] A generic term for virtualization of network functions such as switching, routing, load balancing, and security using a combination of VMs and overlays on physical network infrastructure.
-VLAN Network  [0] The Network Controller provides virtual networks to enable compute servers to interact with each other and with the public network. All machines must have a public and private network interface. A VLAN network is a private network interface, which is controlled by the vlan_interface option with VLAN managers.
-Community Project  [0] Projects not officially endorsed by the OpenStack Foundation. If successful, it may become an incubated project and then to a core project, or may be merged with the main code trunk.
-Orchestration  [0]  An integrated project that orchestrates multiple cloud applications for OpenStack. The project name of Orchestration is heat.
-API and API Endpoint [1] Application Programming Interface. A collection of specifications used to access a service, application, or program. In the case of an endpoint, the daemon or worker that provides the service.
-Front End  [1] The point where a user interacts with a service; can be an API endpoint, the horizon dashboard, or a command-line tool.
-Back End  [1] Any processes that are obfuscated from the user. Think daemons waiting in the background waiting for requests, or carrying out tasks in response to messages in a queue; an example might be the creation and deletion of volumes on storage arrays, or passing tokens with API calls.
+* Flat Mode Injection  [9]  A compute networking method where the OS network configuration information is injected into the image before the VM instance is started.
+* FlatDHCP Manager  [9] The compute component that gives dnsmasq (DHCP, DNS, BOOTP, TFTP) and routing services.
+* Gateway  [0] An IP addressed assigned to an interface, typically on a router, that can pass network traffic from one network to another.
+* Instance Tunnels Network  [0]  A network used for instance traffic tunnels between compute nodes and the network node.
+* Linux Bridge  [0]  Software that allows multiple VM instances to share a single Physical NIC within Compute.
+* Multi-host  [0]  High-availability mode for legacy (nova) networking. Each compute node handles NAT and DHCP and acts as a gateway for all of the VMs on it. A networking failure on one compute node doesn't affect VMs on other compute nodes.
+* Network Manager  [0] The Compute component that manages various network components, such as firewall rules, IP address allocation, and so on.
+* Network Node  [0]  Any compute node that runs the network worker daemon.
+* Networking  [0]  A core OpenStack project that provides a network connectivity abstraction layer to OpenStack Compute. The project name of Networking is neutron.
+* Virtual Networking  [0] A generic term for virtualization of network functions such as switching, routing, load balancing, and security using a combination of VMs and overlays on physical network infrastructure.
+* VLAN Network  [0] The Network Controller provides virtual networks to enable compute servers to interact with each other and with the public network. All machines must have a public and private network interface. A VLAN network is a private network interface, which is controlled by the vlan_interface option with VLAN managers.
+* Community Project  [0] Projects not officially endorsed by the OpenStack Foundation. If successful, it may become an incubated project and then to a core project, or may be merged with the main code trunk.
+* Orchestration  [0]  An integrated project that orchestrates multiple cloud applications for OpenStack. The project name of Orchestration is heat.
+* API and API Endpoint [1] Application Programming Interface. A collection of specifications used to access a service, application, or program. In the case of an endpoint, the daemon or worker that provides the service.
+* Front End  [1] The point where a user interacts with a service; can be an API endpoint, the horizon dashboard, or a command-line tool.
+* Back End  [1] Any processes that are obfuscated from the user. Think daemons waiting in the background waiting for requests, or carrying out tasks in response to messages in a queue; an example might be the creation and deletion of volumes on storage arrays, or passing tokens with API calls.
 aaS [1] Stands for as a Service.  Types of aaS: Metal (MaaS), Infrastructure (IaaS), Platform (PaaS), Desktop (DaaS),  Firewall (Fwaas), Anything (XaaS)
 Core Project [1] Any official OpenStack Foundation projects; Compute (nova), Object Storage (swift), Image service (glance), Identity (keystone), Dashboard (horizon), Networking (neutron), and Block Storage (cinder), the Telemetry module (ceilometer), Orchestration module (heat), Database service (trove), Bare Metal service (ironic), Data processing service (sahara).
 Deprecate [1] This mechanism has lost favor and may be removed from future version. Currently, many of the project specific python-clients are being depreciated in favor of the python-OpenStack client.
