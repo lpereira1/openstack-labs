@@ -1,7 +1,7 @@
 ---
 date: "2016-10-10"
 draft: false
-weight: 10001
+weight: 10003
 title: "Lab XX - Edit the tempest.conf file"
 ---
 
