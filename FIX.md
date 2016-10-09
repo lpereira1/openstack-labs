@@ -1,8 +1,8 @@
 ---
-date: "2016-02-25"
+date: "2016-10-10"
 draft: false
-weight: 20
-title: "FIX"
+weight: 10002
+title: "Lab XX - Instructors & Students: Quick Fixes & Lab Tips"
 ---
 
 ### Fixes
