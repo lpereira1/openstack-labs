@@ -1,7 +1,7 @@
 ---
 date: "2016-10-10"
 draft: false
-weight: 10002
+weight: 10001
 title: "Lab XX - Instructors & Students: Quick Fixes & Lab Tips"
 ---
 
