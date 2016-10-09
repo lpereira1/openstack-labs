@@ -2,7 +2,7 @@
 date: "2016-10-09"
 draft: false
 weight: 10004
-title: "Lab 00 - Student Setup"
+title: "README"
 ---
 
 # Alta3 openstack-labs
