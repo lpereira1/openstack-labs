@@ -1,8 +1,8 @@
 ---
-date: "2015-09-30"
+date: "2016-10-09"
 draft: false
-weight: 100
-title: "README"
+weight: 10100
+title: "Lab 00 - Student Setup"
 ---
 
 # Alta3 openstack-labs
