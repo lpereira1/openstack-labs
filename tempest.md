@@ -1,8 +1,8 @@
 ---
-date: "2016-06-10"
+date: "2016-10-10"
 draft: false
-weight: 17
-title: "Lab 17 - Edit the tempest.conf file"
+weight: 10001
+title: "Lab XX - Edit the tempest.conf file"
 ---
 
 ## How to Test OpenStack Keystone or Identity Deployment With Tempest
