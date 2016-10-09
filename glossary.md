@@ -1,7 +1,7 @@
 ---
 date: "2015-09-30"
 draft: false
-weight: 300
+weight: 10010
 title: "Glossary"
 ---
 * API Token  [0]  Passed on API requests and used by OpenStack services to verify that this particular user is authorized to access and run the requested operation.
