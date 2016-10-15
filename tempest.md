@@ -4,6 +4,7 @@ draft: false
 weight: 10003
 title: "Lab XX - Edit the tempest.conf file"
 ---
+[Click here to find out more about Alta3 Research's Openstack Training](https://alta3.com/courses/openstack)
 
 ## How to Test OpenStack Keystone or Identity Deployment With Tempest
 
