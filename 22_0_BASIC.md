@@ -1,8 +1,8 @@
 ---
 date: "2016-10-09"
 draft: false
-weight: 210
-title: "Lab 21 - Pick One - BASIC - Install Networking on a freshly booted cloud"
+weight: 220
+title: "Lab 22 - Pick One - BASIC - Install Networking on a freshly booted cloud"
 ---
 [Click here to find out more about Alta3 Research's Openstack Training](https://alta3.com/courses/openstack)
 
