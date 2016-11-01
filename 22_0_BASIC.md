@@ -211,7 +211,7 @@ l2_population = true
 
     `student@controller (admin) :~$` `neutron subnet-create --name provider-subnet  --allocation-pool start=172.16.2.50,end=172.16.2.250 --dns-nameserver 10.3.200.1  --gateway 172.16.2.1 provider-net 172.16.2.0/24`
 
-0. Create a new subnet, sperate from the provider net. Call it "demo-net"  
+0. Create a new network, sperate from the "provider-net". Call it "demo-net"  
 
     `student@controller (admin) :~$` `neutron net-create demo-net`
 
