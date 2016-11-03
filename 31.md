@@ -1,6 +1,6 @@
 ---
 date: "2016-11-03"
-draft: false
+draft: true
 weight: 310 
 title: "Lab 31 - Git"
 ---
