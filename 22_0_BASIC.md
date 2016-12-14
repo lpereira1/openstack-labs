@@ -209,7 +209,7 @@ l2_population = true
 
 0. Define a new subnet, called provider-subnet" and assign it to "provider-net"   
 
-    `student@controller (admin) :~$` `neutron subnet-create --name provider-subnet  --allocation-pool start=172.16.2.50,end=172.16.2.250 --dns-nameserver 10.3.200.1  --gateway 172.16.2.1 provider-net 172.16.2.0/24`
+    `student@controller (admin) :~$` `neutron subnet-create --name provider-subnet  --allocation-pool start=172.16.2.50,end=172.16.2.250 --dns-nameserver 10.0.0.1  --gateway 172.16.2.1 provider-net 172.16.2.0/24`
 
 0. Create a new network, sperate from the "provider-net". Call it "demo-net"  
 
@@ -217,7 +217,7 @@ l2_population = true
 
 0. Create a new subnet called demo-net_subnet and assign demo-net_subnet to demo-net
 
-    `student@controller (admin) :~$` `neutron subnet-create --name demo-net_subnet --dns-nameserver 10.3.200.1 --gateway 192.168.30.1 demo-net 192.168.30.0/24`  
+    `student@controller (admin) :~$` `neutron subnet-create --name demo-net_subnet --dns-nameserver 10.0.0.1 --gateway 192.168.30.1 demo-net 192.168.30.0/24`  
 
 0. Make the provider-net network the service provider.  
     
