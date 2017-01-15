@@ -24,7 +24,7 @@ The objective of this lab is to teach what the networking aspects of a freshly d
 
 0. Study what is being presented. You can left click on the icons, and little pop-ups will show up explaining those icons in detail. The **provider-net**, **demo-net**, and **demorouter** were set up (by Alta3) for the admin project before you entered class. If you need help figuring out what is being presented to you, check the screenshot below.
 
-	![Virtual Networking](https://alta3.com/labs/images/alta3_lab_horizon_network_topology.png)
+	![Virtual Networking](https://alta3.com/static/images/alta3_lab_horizon_network_topology.png)
 
 0. Leave the Horizon session open so you can see it. Meanwhile, launch a new terminal session on your remote desktop, then connect to controller.
 
@@ -99,7 +99,7 @@ Your output should look something like this:
 
 0. Now we need to delete all of the preconfigured aspects of networking. The graphic below depicts the order (A through F) that we'll remove this prebuilt virtual network.
 
-    ![Trash the Neutron Preconfiguration](https://alta3.com/labs/images/alta3_lab_delete_network_order.png)
+    ![Trash the Neutron Preconfiguration](https://alta3.com/static/images/alta3_lab_delete_network_order.png)
 
 0. Delete the interface on the router called demo-net_subnet (See step A in the graphic above)
     
