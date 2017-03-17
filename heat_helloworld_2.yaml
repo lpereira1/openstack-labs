@@ -68,9 +68,13 @@ parameters:
         description: db_root_password must be between 1 and 41 characters
       - allowed_pattern: '[a-zA-Z0-9]*'
         description: db_root_password must contain only alphanumeric characters
+  network_name:
+    type: string
+    description: the network to use
   subnet_name: 
     type: string
-    description: the subnet to launch the VM on
+    description: the subnet within the network to use
+  
 
 resources:
   instance_port:
