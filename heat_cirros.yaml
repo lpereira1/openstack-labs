@@ -23,7 +23,7 @@ parameters:
   
 
 resources:
-  wordpress_instance:
+  alta3_heat_stack:
     type: OS::Nova::Server
     properties:
       networks:
