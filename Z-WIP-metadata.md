@@ -1,8 +1,8 @@
 ---
 date: "2016-10-09"
 draft: true
-weight: 210
-title: "Lab 21 - Introduction to OpenStack API Endpoints"
+weight: 99991
+title: "Lab XX - Metadata"
 ---
 [Click here to find out more about Alta3 Research's Openstack Training](https://alta3.com/courses/openstack)
 
