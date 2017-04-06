@@ -1,6 +1,6 @@
 ---
 date: "2016-12-14"
-draft: false
+draft: true
 weight: 320
 title: "Lab 32 - Ansible"
 ---
