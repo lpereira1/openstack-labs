@@ -1,7 +1,7 @@
 ---
 date: "2017-02-22"
-draft: false
-weight: 360
+draft: true
+weight: 99990
 title: "Lab 36 - Containers"
 ---
 [Click here to find out more about Alta3 Research's Openstack Training](https://alta3.com/courses/openstack)
