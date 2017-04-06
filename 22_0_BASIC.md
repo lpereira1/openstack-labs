@@ -1,6 +1,6 @@
 ---
 date: "2016-10-09"
-draft: false
+draft: true
 weight: 220
 title: "Lab 22 - Pick One - BASIC - Install Networking on a freshly booted cloud"
 ---
