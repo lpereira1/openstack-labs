@@ -1,7 +1,7 @@
 ---
 date: "2016-10-09"
 draft: true
-weight: 175
+weight:
 title: "Lab 17 - APIs, RESTful messages, and Keystone (Identity) authentication"
 ---
 [Click here to find out more about Alta3 Research's Openstack Training](https://alta3.com/courses/openstack)
