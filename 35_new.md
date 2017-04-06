@@ -1,7 +1,7 @@
 ---
 date: "2016-10-30"
 draft: false
-weight: 9999
+weight: 999
 title: "Homework - Practice OpenStack Certified Administrator Exam"
 ---
 [Click here to find out more about Alta3 Research's Openstack Training](https://alta3.com/courses/openstack)
