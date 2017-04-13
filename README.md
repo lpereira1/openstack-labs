@@ -1,11 +1,25 @@
 ---
-date: "2016-10-09"
+date: "2017-04-13"
 draft: false
 weight: 10004
 title: "README"
 ---
 
 # Alta3 openstack-labs
+
+To post the labs, use this process until webhooks does this automatically
+
+`ssh ubuntu@nginx`  
+
+`cd /home/ubuntu/openstack-hugo/content`  
+
+`git pull`  
+
+`cd /home/ubuntu/openstack-hugo`  
+
+`hugo -d /var/www/openstack --themesDir . --config=config.toml  -t angels-ladder`  
+
+
 
 [![license](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) 
 
