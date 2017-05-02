@@ -19,16 +19,52 @@ The objective of this lab is to further your understanding of HTTP transactions 
 
 0. Now click on the the Wireshark icon in the lower left-hand corner of the screen. The icon you are looking for is blue, and depicts a sharkfin.
 
-0. Once Wireshark is open, double click on the click on the **ens3** interface. This will ask Wireshark to capture on all physical interfaces.
+0. Once Wireshark is open, double click on the click on the **any** interface. This will ask Wireshark to capture on all physical interfaces.
 
 0. Wireshark will begin capturing packets, however, we *only* want to display those message that are type HTTP. Type **http** (lowercase) in the bar at the top of Wireshark that currently reads, "Apply a display filter..."
 
 0. Press enter after you type **http** to apply the display filter. This should Wireshark to display no packets, as you should not yet have captured any HTTP traffic. 
 
-0. Now open a terminal session. The python-openstackclient has already been installed on the local remote desktop. 
+0. Now open a terminal session. The python-openstackclient has already been installed on the local remote desktop, so we just need to recreate an OpenRC file here. First change to the home directory.
 
-    `student@beachhead:/$` `ssh controller`
+    `student@beachhead:/$` `cd`
 
-0. Once logged into the controller, type the following command (it won't work!):
+0. Now create a local copy of admin.rc with vim.
 
-    `student@controller:~$`  `openstack flavor list`
+    `student@beachhead:~$` `vim admin.rc`
+
+0. Press the **i** key to enter insert mode.
+
+0. Copy and paste the following into vim.
+
+    ```
+   export OS_PROJECT_DOMAIN_NAME=default
+   export OS_USER_DOMAIN_NAME=default
+   export OS_PROJECT_NAME=admin
+   export OS_USERNAME=admin
+   export OS_PASSWORD=alta3
+   export OS_AUTH_URL=http://controller:35357/v3
+   export OS_IDENTITY_API_VERSION=3
+   export OS_IMAGE_API_VERSION=2
+   export PS1="\[\e[33m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\] (\[\e[35m\]admin\[\e[m\]) :\W\$ "
+    ```
+   
+0. Press the **esc** key to exit insert mode in vim.
+
+0. Press **Shift** and the **:** key to issue a command.
+
+0. Type **wq** to writeout and quit.
+
+0. Now source the new admin.rc file.
+
+    `student@beachhead:~$` `source admin.rc`
+    
+0. Issue an OpenStack command.
+
+    `student@beachhead (admin) :~$` `openstack flavor list`
+
+0. Great, you should have a flavor list returned to you. However, click back to Wireshark.
+
+0. At the top of the screen, press the big red square to stop capturing packets.
+
+0. Click around within Wirehshark to explore the captured HTTP messages between your openstack-pythonclient, and the OpenStack APIs.
