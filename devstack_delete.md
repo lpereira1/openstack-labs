@@ -1,6 +1,6 @@
 ---
 date: "2017-05-02"
-draft: false
+draft: true
 weight: 370
 title: "Homework - Build your own DevStack environment at home"
 ---
