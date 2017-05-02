@@ -1,13 +1,13 @@
 
 ---
-date: "2017-04-18"
+date: "2017-05-02"
 draft: true
-weight: 999999
-title: "Lab XX - Wireshark"
+weight: 340
+title: "Lab 34 - Wireshark"
 ---
 [Click here to find out more about Alta3 Research's Openstack Training](https://alta3.com/courses/openstack)
 
-### TUESDAY - &#x2B50;REQUIRED&#x2B50;
+### THURSDAY - &#x2B50;OPTIONAL&#x2B50;
 
 ### Lab Objective
 
