@@ -1,10 +1,4 @@
----
-date: "2016-10-10"
-draft: false
-weight: 10001
-title: "Instructors & Students: Quick Fixes & Lab Tips"
----
-
+# Instructors & Students: Quick Fixes & Lab Tips
 ### Fixes
 
 #### Quick Lab Fixes

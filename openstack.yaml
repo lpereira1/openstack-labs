@@ -1,0 +1,79 @@
+labs: 
+- file: 00.md
+  title:  "Lab 00 - Student Setup for OpenStack Labs"
+- file: 01.md
+  title:  "Lab 01 - Using vim"
+- file: 02.md
+  title:  "Lab 02 - Openstack python-clients and getting to help with grep"
+- file: 03.md
+  title:  "Lab 03 - Introduction to OpenStack API Endpoints"
+- file: 04.md
+  title:  "Lab 04 - Verifying OpenStack Services"
+- file: 05.md
+  title:  "Lab 05 - Exploring Horizon"
+- file: 06.md
+  title:  "Lab 06 - Adding a Project (Tenant) and Defining a Quota in Horizon"
+- file: 07.md
+  title:  "Lab 07 - Adding Users to a Project in Horizon"
+- file: 08.md
+  title:  "Lab 08 - Launching Instances as a User"
+- file: 09.md
+  title:  "Lab 09 - Taking Control of a Project as admin in Horizon"
+- file: 10.md
+  title:  "Lab 10 - Taking Control of a Project as admin at the CLI"
+- file: 11.md
+  title:  "Lab 11 - Host Aggregate and Availability Zones"
+- file: 12.md
+  title:  "Lab 12 - User Roles and Permissions"
+- file: 13.md
+  title:  "Lab 13 - Administering Role Permissions with Groups"
+- file: 14.md
+  title:  "Lab 14 - Administering OpenStack with Domains"
+- file: 15.md
+  title:  "Lab 15 - Keystone (identity) credentials"
+- file: 16.md
+  title:  "Lab 16 - CLI OpenStack RC files"
+- file: 17.md
+  title:  "Lab 17 - Linux Variables"
+- file: 18.md
+  title:  "Lab 18 - Creating new public and private flavors at the CLI"
+- file: 19.md
+  title:  "Lab 19 - Launching Instances from the CLI"
+- file: 20.md
+  title:  "Lab 20 - Controlling Customer VMs with admin"
+- file: 21.md
+  title:  "Lab 21 - Building Keystone's Service Catalog"
+- file: 22.md
+  title:  "Lab 22 - Provision Virtual Networking on a Freshly Booted Cloud"
+- file: 23.md
+  title:  "Lab 23 - Security Groups"
+- file: 24.md
+  title:  "Lab 24 - Floating IP Addresses"
+- file: 25.md
+  title:  "Lab 25 - Neutron Networking with Horizon"
+- file: 26.md
+  title:  "Lab 26 - Neutron Networking VMs with Floating and Private IPs"
+- file: 27.md
+  title:  "Lab 27 - Logs"
+- file: 28.md
+  title:  "Lab 28 - Glance"
+- file: 29.md
+  title:  "Lab 29 - Creating Block Storage Volumes with Cinder in Horizon"
+- file: 30.md
+  title:  "Lab 30 - Creating Block Storage Volumes with Cinder at the CLI"
+- file: 31.md
+  title:  "Lab 31 - Launching Instances with Key Pairs"
+- file: 32.md
+  title:  "Lab 32 - Creating a Stack with Heat"
+- file: 33.md
+  title:  "Lab 33 - Installing the python-openstackclient on a remote system"
+- file: 34.md
+  title:  "Lab 34 - Wireshark"
+- file: 35.md
+  title:  "Homework - Practice OpenStack Certified Administrator Exam"
+- file: 36.md
+  title:  "Homework - Build your own OpenStack environment at home"
+- file: FIX.md
+  title:  "Instructors & Students: Quick Fixes & Lab Tips"
+- file: glossary.md
+  title:  "Glossary"

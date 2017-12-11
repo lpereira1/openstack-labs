@@ -1,10 +1,4 @@
----
-date: "2017-04-13"
-draft: false
-weight: 10004
-title: "README"
----
-
+# README
 # Alta3 openstack-labs
 
 To post the labs, use this process until webhooks does this automatically

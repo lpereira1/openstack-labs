@@ -1,10 +1,4 @@
----
-date: "2015-10-30"
-draft: false
-weight: 10003
-title: "Glossary"
----
-[Click here to find out more about Alta3 Research's Openstack Training](https://alta3.com/courses/openstack)
+# Glossary
 
 * API Token  [0]  Passed on API requests and used by OpenStack services to verify that this particular user is authorized to access and run the requested operation.
 * Austin  [0] The first release of OpenStack was called Austin. Unsurprisingly, the first design summit took place in this capital city of Texas. OpenStack versions are short lived, and the release dates are aggressive (about 2 new releases a year). Generally, a customer will fork an OpenStack release version, and stick with it.
